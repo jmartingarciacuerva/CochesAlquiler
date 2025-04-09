@@ -30,6 +30,6 @@ public class Camion extends VehiculosPorDias{
 
     @Override
     public String toString() {
-        return super.toString()+ " |\ncapacidad=" + capacidad + " | precioVehiculosEspeciales_hora=" + precioVehiculosEspeciales_hora;
+        return "CAMION: " + super.toString()+ " |\ncapacidad=" + capacidad + " | precioVehiculosEspeciales_hora=" + precioVehiculosEspeciales_hora;
     }
 }

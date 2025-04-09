@@ -32,6 +32,6 @@ public class Coche extends VehiculosPorDias{
 
     @Override
     public String toString() {
-        return super.toString()+ " |\nCapacidad: " + numeroDePersonas + " | cantidad de sillas=" + cantidadSillas;
+        return "COCHE :" + super.toString()+ " |\nCapacidad: " + numeroDePersonas + " | cantidad de sillas=" + cantidadSillas;
     }
 }

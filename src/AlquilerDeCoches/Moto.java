@@ -35,7 +35,7 @@ public class Moto extends VehiculosPorHoras{
     @Override
     public String toString() {
         if (sideCar){
-            return super.toString() + " |\nCON sidecar" + " | Cilindrada=" + cilindrada;
+            return "MOTO: "+super.toString() + " |\nCON sidecar" + " | Cilindrada=" + cilindrada;
         }else {
             return super.toString() + " |\nSIN sidecar" + " | Cilindrada=" + cilindrada;
         }

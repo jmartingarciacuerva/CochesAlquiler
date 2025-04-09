@@ -30,7 +30,7 @@ public class MiniMain {
         System.out.println("Precio simulado: "+moto.simularPrecio(LocalDateTime.now(),LocalDateTime.now().plusHours(10))+ " euros");//Mostramos el precio
 */
 
-        AlquilerDeCoches.Moto moto2 = new AlquilerDeCoches.Moto("1234-BBB","Honda","CBR",
+        Moto moto2 = new AlquilerDeCoches.Moto("1234-BBB","Honda","CBR",
                 "A1",5.2,false,500);
         vehiculos.add(moto2);
 
@@ -60,8 +60,8 @@ public class MiniMain {
 
         switch (opcion){
             case "1" : altaCoche(vehiculos);break;
-            case "2" : altaCamion(vehiculos); break;
-            case "3" :altaMoto(vehiculos);break;
+           // case "2" : altaCamion(vehiculos); break;
+           // case "3" :altaMoto(vehiculos);break;
 
         }
 
