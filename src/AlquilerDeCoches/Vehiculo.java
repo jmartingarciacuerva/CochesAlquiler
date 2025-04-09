@@ -90,7 +90,7 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo:"+ codigoVehiculo +
+        return "CodVehiculo:"+ codigoVehiculo +
                 " | Matricula=" + matricula +
                 " | Fabricante=" + fabricante +
                 " | Modelo=" + modelo +

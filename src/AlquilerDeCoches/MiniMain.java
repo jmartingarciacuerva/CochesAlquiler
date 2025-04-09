@@ -6,17 +6,24 @@ import java.util.regex.Pattern;
 
 public class MiniMain {
     public static void main(String[] args) {
-        /*Vehiculo v = new Vehiculo("a","a","a","a");
-        System.out.println(v);
 
-         */
 
         ArrayList<AlquilerDeCoches.Vehiculo> vehiculos = new ArrayList<AlquilerDeCoches.Vehiculo>();
+        //pruebasClaseMoto();
 
-        //Creamos una moto
+        crearVehiculosIniciales(vehiculos);
+
+
+        mostrarVehiculos(vehiculos);
+
+        altaVehiculo(vehiculos);
+
+        mostrarVehiculos(vehiculos);
+    }
+
+    private static void pruebasClaseMoto() {
         Moto moto = new AlquilerDeCoches.Moto("1234-AAA","BMW","A-345",
                 "A1",5.2,true,500);
-        vehiculos.add(moto);
 /*
         System.out.println(moto);
         System.out.println();
@@ -32,17 +39,35 @@ public class MiniMain {
 
         Moto moto2 = new AlquilerDeCoches.Moto("1234-BBB","Honda","CBR",
                 "A1",5.2,false,500);
-        vehiculos.add(moto2);
 
-        mostrarVehiculos(vehiculos);
-
-        altaVehiculo(vehiculos);
-
-        mostrarVehiculos(vehiculos);
     }
 
-    private static void mostrarVehiculos(ArrayList<AlquilerDeCoches.Vehiculo> vehiculos) {
-        for (AlquilerDeCoches.Vehiculo vehiculo :vehiculos) {
+    private static void crearVehiculosIniciales(ArrayList<Vehiculo> vehiculos) {
+        Moto moto = new Moto("1234-AAA","BMW","A-345",
+                "A1",5.2,true,500);
+        vehiculos.add(moto);
+
+        Moto moto2 = new Moto("1234-BBB","Honda","CBR",
+                "A1",5.2,false,500);
+        vehiculos.add(moto2);
+
+        Coche coche = new Coche("4444-AAA","BMW","300",
+                "A1",30,5,3);
+        Coche coche2 = new Coche("5555-AAA","AUDI","A300",
+                "A1",35,5,3);
+        vehiculos.add(coche);
+        vehiculos.add(coche2);
+
+        Camion camion = new Camion("8888-AAA","PEGASO","RS300",
+                "C1",30,5000);
+        Camion camion2 = new Camion("9999-AAA","FORD","A300",
+                "C",35,10000);
+        vehiculos.add(camion);
+        vehiculos.add(camion2);
+    }
+
+    private static void mostrarVehiculos(ArrayList<Vehiculo> vehiculos) {
+        for (Vehiculo vehiculo :vehiculos) {
             System.out.println(vehiculo+"\n");
         }
     }
