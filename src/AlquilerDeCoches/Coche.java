@@ -15,6 +15,10 @@ public class Coche extends VehiculosPorDias{
         this.cantidadSillas = cantidadSillas;
     }
 
+    public Coche(String codVehiculo){
+        super(codVehiculo);
+    }
+
     @Override
     public double calcularPrecio() {
         return simularPrecio(super.getFecha_hora_alquiler(),super.getFecha_hora_devolucion());

@@ -16,6 +16,10 @@ public class Moto extends VehiculosPorHoras{
         this.cilindrada = cilindrada;
     }
 
+    public Moto (String codVehiculo){
+        super(codVehiculo);
+    }
+
     @Override
     public double calcularPrecio() {
         return simularPrecio(super.getFecha_hora_alquiler(),super.getFecha_hora_devolucion());

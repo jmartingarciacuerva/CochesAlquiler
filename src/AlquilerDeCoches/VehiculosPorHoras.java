@@ -8,6 +8,10 @@ public abstract class VehiculosPorHoras extends Vehiculo{
         this.precioHora = precioHora;
     }
 
+    public VehiculosPorHoras(String codVehiculo){
+        super(codVehiculo);
+    }
+
     public double getPrecioHora() {
         return precioHora;
     }

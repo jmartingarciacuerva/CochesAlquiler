@@ -9,6 +9,9 @@ public abstract class VehiculosPorDias extends Vehiculo{
         this.precioPorDia= precioPorDia;
     }
 
+    public VehiculosPorDias(String codVehiculo){
+        super(codVehiculo);
+    }
     public double getPrecioPorDia() {
         return precioPorDia;
     }

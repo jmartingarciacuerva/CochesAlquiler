@@ -12,6 +12,9 @@ public class Camion extends VehiculosPorDias{
         super(matricula, fabricante, modelo, carnetNecesario, precioPorDia);
         this.capacidad = capacidad;
     }
+    public Camion(String codVehiculo){
+        super(codVehiculo);
+    }
 
     @Override
     public double calcularPrecio() {
